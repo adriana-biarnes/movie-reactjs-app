@@ -1,0 +1,11 @@
+.movies-wrapper {
+    /* display: flex; */
+}
+
+.movies-list-title {
+   text-align: center;
+}
+
+.list-container {
+    display: block;
+}
