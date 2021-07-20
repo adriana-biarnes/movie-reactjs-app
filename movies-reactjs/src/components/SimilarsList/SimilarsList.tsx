@@ -6,9 +6,7 @@ import { getSimilarListService } from '../../redux/effects/SimilarService';
 import { AppState } from '../../redux/store';
 import ItemList from '../ItemList/ItemList';
 import Spinner from '../Spinner/Spinner';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import { getDetailsService } from '../../redux/effects/DetailsService';
+
 
 interface SimilarListProps {
   movieId: number,

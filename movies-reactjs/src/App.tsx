@@ -12,9 +12,8 @@ const App = () => (
     <Router>
       <Header />
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/home'>
           <Hero />
-          {/* <MoviesList /> */}
         </Route>
         <Route exact path='/details'>
           <DetailsLayout />

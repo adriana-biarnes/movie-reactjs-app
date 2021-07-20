@@ -1,6 +1,6 @@
 .movies-wrapper {
   background-color: #efeae7;
-  padding: 70px 50px;
+  padding: 50px;
 }
 
 .movies-list-title {
@@ -9,7 +9,3 @@
   font-weight: 700;
   font-size: 1.8rem;
 }
-
-/* .list-container {
-  display: block;
-} */
