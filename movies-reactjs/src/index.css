@@ -9,18 +9,6 @@ body {
   font-size: 16px;
 }
 
-body > div {
-  background-color: #efeae7;
-}
-
-.btn {
-  font-weight: bold;
-}
-.form-group label,
-.list-group-item {
-  font-size: 1.4rem;
-}
-
 .app-wrapper {
   background-color: #efeae7;
   padding: 40px 0;

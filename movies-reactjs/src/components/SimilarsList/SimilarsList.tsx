@@ -1,20 +1,16 @@
-import { Col, Row } from 'antd';
-import './SimilarsList.css';
-import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Col, Row } from 'antd';
 import { getSimilarListService } from '../../redux/effects/SimilarService';
 import { AppState } from '../../redux/store';
 import ItemList from '../ItemList/ItemList';
 import Spinner from '../Spinner/Spinner';
-
-
+import './SimilarsList.css';
 interface SimilarListProps {
   movieId: number,
 }
 
 const SimilarList: React.FC<SimilarListProps> = ({movieId}) => {
   const dispatch = useDispatch();
-
   dispatch(getSimilarListService(movieId));
   
   const { similarList } = useSelector(

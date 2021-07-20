@@ -1,6 +1,5 @@
 .carousel-wrapper {
     background-color: #efeae7;
-    /* background-color: #353539; */
 }
 
 .carousel-wrapper a span {
@@ -52,10 +51,6 @@
 .hero-rating {
     padding: 0 0 20px 0px;
     font-weight: 700;
-}
-
-.hero-picture {
-    object-fit: cover;
 }
 
 .sr-only {
