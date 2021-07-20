@@ -4,17 +4,23 @@ import { AppState } from './redux/store';
 import MoviesList from './components/MoviesList/MoviesList';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import DetailsLayout from './components/DetailsLayout/DetailsLayout';
 
 const App = () => (
   <>
-    <Header />
-    <Hero />
-    {/* {movies && movies.map((movieItem: Movie) => (
-      <div key={movieItem.id}>
-        <MoviesList title={movieItem.title} /> 
-      </div>
-    ))} */}
-    <MoviesList />
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path='/'>
+          <Hero />
+          <MoviesList />
+        </Route>
+        <Route exact path='/details'>
+          <DetailsLayout />
+        </Route>
+      </Switch>
+    </Router>
   </>
 );
 

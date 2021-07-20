@@ -2,11 +2,19 @@ import './Header.css';
 export interface HeaderProps {
     
 }
- 
+
+
 const Header: React.FunctionComponent<HeaderProps> = () => {
+    let path = window.location.pathname
+    
     return (
+
         <div className="header-wrapper">
-            <h1 className="header-title">TOP TRENDING LIST</h1>
+            {path === '/' 
+                ? <h1 className="header-title">top trending list</h1>
+                : <h1 className="header-title">details</h1>
+            }
+            
         </div>
     );
 }

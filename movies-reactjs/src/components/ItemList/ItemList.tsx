@@ -5,28 +5,27 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getMoviesShowsListService } from '../../redux/effects/MoviesService';
 
-const ItemList = ({}) => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getMoviesShowsListService());
-  }, [dispatch]);
-  const movieInformation = useSelector(
-    (state: AppState) => state.moviesShowsList
-  );
-  console.log('AAAAAAAAAAA', movieInformation);
+interface ItemListProps {
+  id: number,
+  title: string;
+  rating: number;
+  picture: string;
+}
 
+const pictureUrl = 'https://image.tmdb.org/t/p/w500';
+
+const ItemList: React.FC<ItemListProps> = ({ id, title, rating, picture }) => {
   const { Meta } = Card;
+  console.log(id);
   return (
     <>
-      {/* <Card
+      <Card
         hoverable
         style={{ width: 240 }}
-        cover={
-          <img alt="Coming soon" src={`${pictureUrl}${item.poster_path}`} />
-        }
+        cover={<img alt="Coming soon" src={`${pictureUrl}${picture}`} />}
       >
-        <Meta title={item.original_title} description={item.vote_average} />
-      </Card> */}
+        <Meta title={title} description={rating} />
+      </Card>
     </>
   );
 };

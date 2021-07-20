@@ -1,7 +1,69 @@
-h3 {
-    height: 160px;
-    color: #ffffff;
-    line-height: 160px;
+.carousel-wrapper {
+    background-color: #efeae7;
+    /* background-color: #353539; */
+}
+
+.carousel-wrapper a span {
+    background-color: #353539;
+    /* background-color: #efeae7; */
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin: auto 80px;
+}
+
+.carousel-wrapper .carousel-inner {
     text-align: center;
-    background: rgb(53, 57, 57);
+    margin: auto;
+    width: 95%;
+    height: 500px;
+    border: 3px solid #353539d5;
+    border-radius: 16em;
+}
+
+.active.carousel-item {
+    height: 500px;
+}
+
+.active.carousel-item .carousel-picture {
+    height: 550px;
+}
+
+.carousel-info.carousel-caption {
+    bottom: 0;
+    padding: 0;
+}
+
+.hero-info {
+    background: #071115ad;
+    padding-top: 30px;
+    color: #59c3c3;
+    font-family: 'Roboto Condensed', sans-serif;
+    max-width: 365px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero-title {
+    border-radius: 100px 100px 0 0;
+    color: #efeae7;
+}
+
+.hero-rating {
+    padding: 0 0 20px 0px;
+    font-weight: 700;
+}
+
+.hero-picture {
+    object-fit: cover;
+}
+
+
+.hero-picture-wrapper {
+    background-color: aquamarine;
+}
+
+.sr-only {
+    display: none;
 }
