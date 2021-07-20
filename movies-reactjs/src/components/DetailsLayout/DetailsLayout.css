@@ -3,6 +3,11 @@
     padding-bottom: 55px;
 }
 
+.goback-btn {
+    height: 55px;
+    margin-left: 50px;
+}
+
 .details-info {
     display: block;
     background: white;
@@ -21,12 +26,30 @@
 
 .details-info .info-title{
     font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.details-info .info-subtitle {
+    font-size: 1.8rem;
+    color: #07111583;
+    font-style: italic;
+    margin-bottom: 2rem;
 }
 
 .details-info .info-text{
     color: #59c3c3;
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.rating-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.info-text.rating-num {
+    font-size: 1.8rem;
+    margin-left: 25px;
 }
 
 .details-info .visual-details {
@@ -46,6 +69,7 @@ span {
     margin: auto 0;
 }
 
-img.star-icon {
-    height: 25px;
+.details-info.similar-list-container {
+    margin-top: 50px;   
 }
+

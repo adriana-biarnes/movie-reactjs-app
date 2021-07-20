@@ -5,8 +5,7 @@ import {
 } from '../types/DetailsTypes';
 
 const initialStateGetDetails: GetDetailsStateType = {
-  movieDetails: [],
-  selected: false,
+  movieDetails: null,
 };
 
 export const getDetailsReducer = (

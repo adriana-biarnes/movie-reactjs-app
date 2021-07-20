@@ -1,0 +1,14 @@
+.movies-wrapper {
+  padding: 70px 50px;
+}
+
+.movies-list-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* .list-container {
+  display: block;
+} */

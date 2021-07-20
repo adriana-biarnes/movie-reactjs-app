@@ -5,7 +5,9 @@
     font-family: 'Playfair Display', serif;
     height: 100px;
     justify-content: center;
-    padding: 70px;
+    margin-bottom: 30px;
+    background-color: #353539d5;
+    margin: 30px auto;
 }
 
 .header-title {
@@ -13,4 +15,13 @@
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0;
+  }
+
+  .header-icon {
+    height: 50px;
+    margin-left: 20px;
+  }
+
+  .header-icon.info-icon {
+      height: 35px;
   }

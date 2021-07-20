@@ -20,3 +20,8 @@ body > div {
 .list-group-item {
   font-size: 1.4rem;
 }
+
+.app-wrapper {
+  background-color: #efeae7;
+  padding: 40px 0;
+}

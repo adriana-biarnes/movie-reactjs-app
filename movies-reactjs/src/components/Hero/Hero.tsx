@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { getDetailsService } from '../../redux/effects/DetailsService';
 import { getMoviesShowsListService } from '../../redux/effects/MoviesService';
 import { AppState } from '../../redux/store';
 import './Hero.css';
@@ -19,6 +20,10 @@ const Hero = () => {
     (state: AppState) => state.moviesShowsList
   );
 
+  const handleDetails = (id:number) => {
+    dispatch(getDetailsService(id));
+  }
+ 
   return (
       <Carousel indicators={false} interval={null} className="carousel-wrapper">
         {moviesShowsList &&
@@ -29,7 +34,7 @@ const Hero = () => {
                 src={`${pictureUrl}${item.poster_path}`}
                 alt="First slide"
               />
-              <Link to='/details'>
+              <Link to='/details' onClick={() => handleDetails(item.id)}>
                 <Carousel.Caption className="carousel-info">
                   {
                     item.original_title ? (

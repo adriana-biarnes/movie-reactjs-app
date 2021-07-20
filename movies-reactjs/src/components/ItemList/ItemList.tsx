@@ -4,7 +4,6 @@ import { AppState } from '../../redux/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getMoviesShowsListService } from '../../redux/effects/MoviesService';
-
 interface ItemListProps {
   id: number,
   title: string;
@@ -16,7 +15,6 @@ const pictureUrl = 'https://image.tmdb.org/t/p/w500';
 
 const ItemList: React.FC<ItemListProps> = ({ id, title, rating, picture }) => {
   const { Meta } = Card;
-  console.log(id);
   return (
     <>
       <Card
