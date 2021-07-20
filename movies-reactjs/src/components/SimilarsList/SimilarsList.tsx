@@ -25,7 +25,7 @@ const SimilarList: React.FC<SimilarListProps> = ({movieId}) => {
     <div className="movies-wrapper">
       <Row>
         <Col span={24} className="movies-list-title">
-          <p>related movies and tv shows that you might like</p>
+          <p className="related-title">related movies and tv shows that you might like</p>
         </Col>
       </Row>
       <Row className="list-container">

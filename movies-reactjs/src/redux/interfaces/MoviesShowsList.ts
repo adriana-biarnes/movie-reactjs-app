@@ -3,5 +3,4 @@ export interface MoviesShowsList {
     results: any;
     totalPages: number;
     totalResults: number;
-    isFetching: boolean;
 }

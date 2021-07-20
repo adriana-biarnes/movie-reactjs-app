@@ -1,0 +1,21 @@
+.alert.error{
+    background-color: #59c3c3a6 ;
+    width: 35%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    
+}
+
+.goback-btn.error {
+    margin: 0;
+    background-color: #59c3c3;
+    border-radius: 50px;
+}

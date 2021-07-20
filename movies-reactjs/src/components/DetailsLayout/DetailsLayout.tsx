@@ -1,16 +1,17 @@
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { AppState } from '../../redux/store';
 import './DetailsLayout.css';
-import { Link } from 'react-router-dom';
-import backButton from '../../media/backbtn.svg';
 import SimilarsList from '../SimilarsList/SimilarsList';
+import backButton from '../../media/backbtn.svg';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
 
 const DetailsLayout: React.FC = () => {
   const { movieDetails } = useSelector((state: AppState) => state.movieDetails);
 
-  return (
+  return movieDetails ? (
     <div className="details-wrapper">
-      <Link to="/home">
+      <Link to="/">
         <img src={backButton} alt="Go back" className="goback-btn" />
       </Link>
       <div className="details-info">
@@ -27,6 +28,8 @@ const DetailsLayout: React.FC = () => {
         <SimilarsList movieId={movieDetails?.id!} />
       </div>
     </div>
+  ) : (
+    <ErrorMessage />
   );
 };
 

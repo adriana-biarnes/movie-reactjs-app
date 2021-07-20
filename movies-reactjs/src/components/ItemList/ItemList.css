@@ -1,3 +1,19 @@
 .item-card {
     width: 240px;
+    cursor: pointer;
+}
+
+.ant-card-cover img {
+    border-radius: 30px 30px 5px 5px;
+}
+
+.ant-card-body {
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+.ant-card-bordered {
+    border: none;
+    border-bottom: 1px solid #efeae7;
+    margin-bottom: 50px;
 }

@@ -1,5 +1,5 @@
 .movies-wrapper {
-  padding: 70px 50px;
+  padding: 50px;
 }
 
 .movies-list-title {
@@ -9,6 +9,7 @@
   font-size: 1.8rem;
 }
 
-/* .list-container {
-  display: block;
-} */
+p.related-title {
+  color: #59c3c3;
+  margin-bottom: 40px;
+}

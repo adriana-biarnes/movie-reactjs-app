@@ -14,7 +14,7 @@ const Hero = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMoviesShowsListService());
-  }, [dispatch]);
+  }, []);
 
   const { moviesShowsList } = useSelector(
     (state: AppState) => state.moviesShowsList
@@ -22,6 +22,7 @@ const Hero = () => {
 
   const handleDetails = (id:number) => {
     dispatch(getDetailsService(id));
+    window.localStorage.setItem('detailsInfo', JSON.stringify(moviesShowsList));
   }
  
   return (
@@ -34,7 +35,7 @@ const Hero = () => {
                 src={`${pictureUrl}${item.poster_path}`}
                 alt="First slide"
               />
-              <Link to='/details' onClick={() => handleDetails(item.id)}>
+              <Link to={`/details/${item.id}`} onClick={() => handleDetails(item.id)}>
                 <Carousel.Caption className="carousel-info">
                   {
                     item.original_title ? (

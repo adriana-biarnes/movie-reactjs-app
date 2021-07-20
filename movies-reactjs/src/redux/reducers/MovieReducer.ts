@@ -4,7 +4,7 @@ import {
     MoviesShowsListActionTypes,
 } from '../types/MovieTypes';
 
-const initialStateGetMoviesShowsList: GetMoviesShowsListStateType = {
+export const initialStateGetMoviesShowsList: GetMoviesShowsListStateType = {
   moviesShowsList: []
 };
 
@@ -21,4 +21,5 @@ export const getMoviesShowsListReducer = (
       default:
         return state;
     }
-  };  
+  }; 
+

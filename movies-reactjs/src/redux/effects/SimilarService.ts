@@ -11,7 +11,6 @@ export const getSimilarListService = (id:number) => {
             .then(res => res.json())
             .then(data => {
                 dispatch(getSimilarListAction(data.results));
-                console.log('similar', data.results)
                 return data.results;
             });
     };
