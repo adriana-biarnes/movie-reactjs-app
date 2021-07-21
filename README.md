@@ -10,4 +10,6 @@ The app has a main view where it can be seen a carousel with trending tv shows a
 To run the app you need NodeJS, then run the following commands:
 
 npm install
+
+
 npm start
